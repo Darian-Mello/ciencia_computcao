@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <head>
+        <meta charset="utf-8">
+        <title>TrabFinal_BCC_2020_DarianMello</title>
+        <script src="script_media.js"></script>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="Estilo_Menu.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+                <li><a href="Pg_Inicio.html">INÍCIO</a></li>
+                <li><a>FERRAMENTAS</a>
+                    <ul>
+                        <li><a href="Media.html">Calcular média</a></li>
+                        <li><a href="Bases.html">Conversão entre bases</a></li>
+                    </ul>
+                </li>
+                <li><a href="Manual.html">MANUAL</a>
+            </ul>
+        </nav>
+        <div id="tudo">
+            <header id="topo">
+                <h1>
+                    Cálculo de Média
+                </h1>
+            </header>
+        <fieldset>
+        <form name="formulario">
+            <p><label for="idoperacao">Informe o tipo de média: </label>
+            <select id="idoperacao" name="operacao" onchange="Ponderada(operacao.value);">
+                <option value="0">Aritmética</option>
+                <option value="1">Ponderada</option>
+                <option value="2">Harmônica</option>
+            </select></p>
+
+            <p><label for="idnumero">Informe a quantidade de valores que deseja calcular: </label>
+            <select id="idnumero" name="numero" onchange="gera(numero.value); Ponderada(operacao.value);">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select></p>
+        </form>
+        <hr>
+        <h2>Média <span Id="h3">Aritmética</span></h2>
+            <div id="pesos"></div> 
+            <div id="termos">
+                <p><label for='idn1'>Informe o 1º valor: </label><input type='number' name='n1' id='idn1'></p>
+                <p><label for='idn2'>Informe o 2º valor: </label><input type='number' name='n2' id='idn2'></p>
+            </div>
+            <br>
+            <div id="resultado" style="display: none;"></div>
+           <p><button class="botao" onclick="valida(formulario.operacao.value);">CALCULAR</button></p>
+           
+        </fieldset>
+            <footer id="rodape">
+                @Copyright Dariãn de Mello Vargas 2020 <br>
+                Website desenvolvido na disciplina de CPW do curso de Ciência da Computação.
+            </footer>
+        </div>
+    </body>
+</html>

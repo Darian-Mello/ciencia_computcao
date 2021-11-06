@@ -1,0 +1,11 @@
+4) Realize uma pesquisa sobre a interface Set e sobre a classe HashSet: 
+a. Explique o que são e para que servem; 
+
+Set, é um conjunto genérico de valores, onde os elementos não são duplicados.
+Por conta disso, é mais rápido e fácil fazer uma pesquisa num Set do que numa List,
+entretanto a velocidade de inserção dos dados é bem menor, pois sempre é feita uma 
+verificação na estrutura, e caso o valor que se está tentando inserir seja igual a um 
+já existente, o mesmo não será adicionado. 
+A Classe HashSet é uma implementação da interface Set onde utiliza uma tabela hash,
+ e por conta disso não possui ordenação, nem na leitura, nem na varredura dos dados. 
+Além disso, a Classe aceita valores nulos e não é sincronizada.

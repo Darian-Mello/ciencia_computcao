@@ -1,0 +1,8 @@
+4. Descreva as principais diferenças entre as estruturas de dados fila e pilha.
+
+Ambas são estruturas muito utilizadas para armazenamento de dados, entretanto, 
+a Pilha é construída em um sistema LIFO(last-in, first-out), ou seja, na pilha
+de dados, o último elemento a ser inserido será o primeiro a ser retirado.
+Já a Fila é construída em um sistema FIFO(first-in, first-out), ou seja, na fila
+de dados, o primeiro elemento a ser inserido será o primeiro a ser retirado.
+As duas estruturas podem ser feitas em formato estático, ou dinâmico. 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <head>
+        <meta charset="utf-8">
+        <title>TrabFinal_BCC_2020_DarianMello</title>
+        <script src="script_bases.js"></script>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="Estilo_Menu.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+                <li><a href="Pg_Inicio.html">INÍCIO</a></li>
+                <li><a>FERRAMENTAS</a>
+                    <ul>
+                        <li><a href="Media.html">Calcular média</a></li>
+                        <li><a href="Bases.html">Conversão entre bases</a></li>
+                    </ul>
+                </li>
+                <li><a href="Manual.html">MANUAL</a>
+            </ul>
+        </nav>
+        <div id="tudo">
+            <header id="topo">
+                <h1>
+                    Conversão Entre Bases Numéricas
+                </h1>
+            </header>
+        <fieldset>
+        <form name="formulario">
+            <p><label for="idoperacao">Informe a base do número que está inserindo: </label>
+            <select id="identrada" name="entrada" onchange="muda_entrada(entrada.value);">
+                <option value="0">Binária</option>
+                <option value="1">Octal</option>
+                <option value="2" selected>Decimal</option>
+                <option value="3">Exadecimal</option>
+            </select></p>
+
+            <p><label for="idnumero">Informe a base do resultado: </label>
+            <select id="idsaida" name="saida" onchange="muda_saida(saida.value);">
+                <option value="0" selected>Binária</option>
+                <option value="1">Octal</option>
+                <option value="2">Decimal</option>
+                <option value="3">Exadecimal</option>
+            </select></p>
+        <hr>
+        <h2>Convertento <span id="span_entrada">Decimal</span> Para <span id="span_saida">Binário</span></h2>
+            <div id="">
+                <p><label for='idn1'>Informe o valor: </label><input pattern="[0-1]+" type='text' name='n' id='idn' placeholder="Decimal" required></p>
+            </div>
+            <br>
+        </form>
+        <div id="resultado" style="display: none;"></div>
+        <p><button class="botao" onclick="valida_entrada(formulario.entrada.value, formulario.n.value);">CONVERTER</button></p>
+        </fieldset>
+            <footer id="rodape">
+                @Copyright Dariãn de Mello Vargas 2020 <br>
+                Website desenvolvido na disciplina de CPW do curso de Ciência da Computação.
+            </footer>
+        </div>
+    </body>
+</html>

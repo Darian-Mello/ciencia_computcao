@@ -1,0 +1,11 @@
+Na linguagem C++, é possível realizar alocações de memória utilizando
+alocação dinâmica ou estática. Assinale a alternativa que representa
+uma alocação dinâmica de um vetor do tipo primitivo double com 10
+posições na linguagem C++.
+a. double *vd = new double[10];
+b. double vd = new double[10];
+c. double *vd = new double[];
+d. *vd = new double[10];
+
+
+Rsposta: Letra A; 

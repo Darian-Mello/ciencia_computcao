@@ -1,0 +1,6 @@
+Descreva as principais diferenças entre a implementação estática e a implementação dinâmica da estrutura de
+dados fila.
+Em uma fila estática, é necessário definir um tamanho especifico, dessa forma, a fila ficará 
+com uma capacidade limitada aquele número de dados. 
+Já numa fila dinâmica, não é preciso definir um tamanho, pois a estrutura aloca os dados dinâmicamente 
+na memória do sistema, suprindo as necessidades do usuário de acordo com a memória disponível.  
